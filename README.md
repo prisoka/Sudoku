@@ -5,6 +5,16 @@
 ## What are you looking at? 
 This is the Q1 Front-end Project, at Galvanize Web Development Immersive.
 
+**Whats is Sudoku?**
+
+Sudoku is a Japanese logic-based number puzzle that doesn't require magical math skills, but logic and concentration.
+
+**How to play?**
+
+The goal is to place the numbers from 1 to 9 into the empty cells, so that each row, column and 3x3 section contain all of the digits between 1 and 9, and each number appears only once.
+
+To get started, the grid will have some os the squares filled in. All you have to do is to fill in the grid with the missing digits in order to complete the board.
+
 ## Skills Learned: 
 HTML, CSS, JavaScript, Bulma, and Surge to deploy.
 
