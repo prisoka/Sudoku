@@ -30,7 +30,7 @@ window.onload = function() {
   setupNumberMenu();
   setupResetBtn(sudoku);
   setupSolveBtn(sudokuSolved);
-  populateUserArr()
+  // populateUserArr()
   setupValidateBtn();
 }
 
@@ -102,18 +102,25 @@ function populateUserArr(){
     userSolution.push(numToCheck.splice(0,9))
     // console.log(userSolution);
   };
+  return userSolution;
 }
 
 //2: validate btn onclick, compare user's solution x sudoku solution:
 function setupValidateBtn(){
   document.getElementById("validate").onclick = function(){
-    //if userSolution arr = sudokuSolved arr, true.
     //compare arrays:
     let userSolution = populateUserArr();
     //nested loop to check if the values are equal crossing rowsXcolumns
     //1st loop over row number
-    for (let i=0; i<userSolution.length; i++)
-    //2nd loop over columns
+    for (let i = 0; i < userSolution.length; i++){
+      //2nd loop over columns
+      for (let j = 0; j < userSolution[i].length; j++){
+        //if userSolution arr != sudokuSolved arr.
+        if(userSolution[i][j] !== sudokuSolved[i][j]){
+          alert("Hum, not quite...")
+        }
+      }
+    }
 
   }
 }
