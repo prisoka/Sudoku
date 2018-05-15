@@ -120,11 +120,9 @@ function setupValidateBtn(){
           alert("Hum, not quite...");
           return;
         }
-        if (userSolution[i][j] === sudokuSolved[i][j]){
-          let cell = document.getElementsByClassName("cell");
-          cell.style.backgroundColor = "green";
-        }
       }
     }
+    let cell = document.getElementsByClassName("cell");
+    cell.style.backgroundColor = "green";
   }
 }
