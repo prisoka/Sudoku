@@ -92,15 +92,15 @@ function populateUserArr(){
   let numToCheck = [];
   let nodeListFromUser = document.getElementsByClassName("cell");
   Array.from(nodeListFromUser).forEach(function(cell){
-    let cellValues = cell.innerHTML;
+    let cellValues = parseInt(cell.innerHTML);
     numToCheck.push(cellValues)
-    // console.log(numToCheck);
+    console.log(numToCheck);
   });
   // transform 1D array in 2D array to be abe to compare user's inputs vs sudokuSolved nested array;
   let userSolution = []
   while(numToCheck.length) {
     userSolution.push(numToCheck.splice(0,9))
-    // console.log(userSolution);
+    console.log(userSolution);
   };
   return userSolution;
 }
@@ -117,10 +117,14 @@ function setupValidateBtn(){
       for (let j = 0; j < userSolution[i].length; j++){
         //if userSolution arr != sudokuSolved arr.
         if(userSolution[i][j] !== sudokuSolved[i][j]){
-          alert("Hum, not quite...")
+          alert("Hum, not quite...");
+          return;
+        }
+        if (userSolution[i][j] === sudokuSolved[i][j]){
+          let cell = document.getElementsByClassName("cell");
+          cell.style.backgroundColor = "green";
         }
       }
     }
-
   }
 }
