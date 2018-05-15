@@ -16,7 +16,7 @@ The goal is to place the numbers from 1 to 9 into the empty cells, so that each 
 To get started, the grid will have some of the squares filled in. All you have to do is to fill the grid with the missing digits, in order to complete the board.
 
 ## Skills Learned: 
-HTML, CSS, JavaScript, Bulma, and Surge to deploy.
+HTML, CSS, JavaScript, Bulma CSS Framework, and Surge to deploy.
 
 ## Technical Requirements:
 1. Use HTML, CSS, and JavaScript.
