@@ -30,6 +30,8 @@ window.onload = function() {
   setupNumberMenu();
   setupResetBtn(sudoku);
   setupSolveBtn(sudokuSolved);
+  populateUserArr()
+  setupValidateBtn();
 }
 
 function populateBoard(sudoku){
@@ -81,5 +83,37 @@ function setupResetBtn(sudoku){
 function setupSolveBtn(sudokuSolved){
   document.getElementById("solve").onclick = function(){
     populateBoard(sudokuSolved);
+  }
+}
+
+//steps to check the board:
+//1. get user's inputs and add them to an Array
+function populateUserArr(){
+  let numToCheck = [];
+  let nodeListFromUser = document.getElementsByClassName("cell");
+  Array.from(nodeListFromUser).forEach(function(cell){
+    let cellValues = cell.innerHTML;
+    numToCheck.push(cellValues)
+    // console.log(numToCheck);
+  });
+  // transform 1D array in 2D array to be abe to compare user's inputs vs sudokuSolved nested array;
+  let userSolution = []
+  while(numToCheck.length) {
+    userSolution.push(numToCheck.splice(0,9))
+    // console.log(userSolution);
+  };
+}
+
+//2: validate btn onclick, compare user's solution x sudoku solution:
+function setupValidateBtn(){
+  document.getElementById("validate").onclick = function(){
+    //if userSolution arr = sudokuSolved arr, true.
+    //compare arrays:
+    let userSolution = populateUserArr();
+    //nested loop to check if the values are equal crossing rowsXcolumns
+    //1st loop over row number
+    for (let i=0; i<userSolution.length; i++)
+    //2nd loop over columns
+
   }
 }
