@@ -26,12 +26,19 @@ let sudokuSolved = [
 
 window.onload = function() {
 
-  populateBoard(sudoku);
+  setupStartBtn();
+  // populateBoard(sudoku);
   setupNumberMenu();
   setupResetBtn(sudoku);
   setupSolveBtn(sudokuSolved);
   // populateUserArr()
   setupValidateBtn();
+}
+
+function setupStartBtn(){
+  document.getElementById("start").onclick = function(){
+    populateBoard(sudoku)
+  }
 }
 
 function populateBoard(sudoku){
