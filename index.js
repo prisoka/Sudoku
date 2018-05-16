@@ -41,6 +41,7 @@ function populateBoard(sudoku){
     row.forEach(function (element, index) {
       const cell = rowDom.querySelectorAll(".cell")[index];
       cell.innerHTML = element;
+      cell.classList.remove("right-answer");
 
       if (element === 0) {
         cell.innerHTML = ''
@@ -122,7 +123,9 @@ function setupValidateBtn(){
         }
       }
     }
-    let cell = document.getElementsByClassName("cell");
-    cell.style.backgroundColor = "green";
+    let nodeListCells = document.getElementsByClassName('cell');
+    Array.from(nodeListCells).forEach(function (cell){
+      cell.classList.add("right-answer");
+    });
   }
 }

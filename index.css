@@ -36,3 +36,7 @@
   font-weight: normal;
   background-color: white;
 }
+
+.right-answer {
+  background-color: green;
+}
