@@ -125,11 +125,17 @@ function setupValidateBtn(){
       for (let j = 0; j < userSolution[i].length; j++){
         //if userSolution arr != sudokuSolved arr.
         if(userSolution[i][j] !== sudokuSolved[i][j]){
-          alert("Hum, not quite...");
+          swal("Hum, not quite...", "... but keep trying!");
           return;
         }
       }
     }
+    swal({
+      title: "Good job!",
+      text: "Keep playing!!!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
     let nodeListCells = document.getElementsByClassName('cell');
     Array.from(nodeListCells).forEach(function (cell){
       cell.classList.add("right-answer");
