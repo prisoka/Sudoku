@@ -1,3 +1,5 @@
+// const sudokuGame = require('getSudokuPuzzle');
+
 let selectedNum = "";
 
 let sudoku = [
@@ -125,14 +127,14 @@ function setupValidateBtn(){
       for (let j = 0; j < userSolution[i].length; j++){
         //if userSolution arr != sudokuSolved arr.
         if(userSolution[i][j] !== sudokuSolved[i][j]){
-          swal("Hum, not quite...", "... but keep trying!");
+          swal("Hum, not quite...", "...keep trying!");
           return;
         }
       }
     }
     swal({
       title: "Good job!",
-      text: "Keep playing!!!",
+      // text: "Keep playing!!!",
       icon: "success",
       button: "Aww yiss!",
     });
