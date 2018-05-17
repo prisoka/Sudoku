@@ -32,14 +32,24 @@ let sudokuSolved = [
 ]
 
 describe("validateBoards", function(){
-  it("should return false when one of the board is undefined", function(){
+  it("should return FALSE when one of the board is undefined", function(){
     assert.equal(app.validateBoards(), false);
     assert.equal(app.validateBoards(sudoku), false);
   });
-  it("should return false when the boards are not equal", function(){
+
+  it("should return FALSE when the boards are not equal", function(){
     assert.equal(app.validateBoards(sudoku, sudokuSolved), false);
   });
-  it("should return true when the boards are equal", function(){
+
+  it("should return TRUE when the boards are equal", function(){
     assert.equal(app.validateBoards(sudokuSolved, sudokuSolved), true);
+  });
+
+  it("board1 should return type of number", function(){
+    assert.typeOf(app.validateBoards(sudokuSolved, "number"));
+  });
+
+  it("board2 should return type of number", function(){
+    assert.typeOf(app.validateBoards(sudoku, "number"));
   });
 });

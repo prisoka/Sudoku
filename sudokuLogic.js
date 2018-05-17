@@ -24,5 +24,6 @@ function validateBoards(board1, board2){
 
 module.exports = {
   sayHi : sayHi,
-  validateBoards : validateBoards
+  validateBoards : validateBoards,
+  elementBoard : elementBoard
 }
