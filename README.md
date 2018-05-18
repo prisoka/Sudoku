@@ -1,9 +1,10 @@
 # Sudoku
 
 ## Deployed URL: 
+www.prisoka-sudoku.surge.sh
 
 ## What are you looking at? 
-This is the Q1 Front-end Project, at Galvanize Web Development Immersive.
+This is my Q1 Front-end Project, at Galvanize Web Development Immersive Course.
 
 **Whats is Sudoku?**
 
