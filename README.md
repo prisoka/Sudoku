@@ -4,7 +4,7 @@
 www.prisoka-sudoku.surge.sh
 
 ## What are you looking at? 
-This is my Q1 Front-end Project, at Galvanize Web Development Immersive Course.
+This is my Q1 Front end Project, at Galvanize Web Development Immersive Course.
 
 **Whats is Sudoku?**
 
