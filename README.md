@@ -6,7 +6,7 @@ www.prisoka-sudoku.surge.sh
 ## What are you looking at? 
 This is my Q1 Front end Project, at Galvanize Web Development Immersive Course.
 
-**Whats is Sudoku?**
+**What is Sudoku?**
 
 Sudoku is a Japanese logic-based number puzzle that doesn't require magical math skills, but logic and concentration.
 
