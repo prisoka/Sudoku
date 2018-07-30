@@ -16,6 +16,9 @@ The goal is to place the numbers from 1 to 9 into the empty cells, so that each 
 
 To get started, the grid will have some of the squares filled in. All you have to do is to fill the grid with the missing digits, in order to complete the board.
 
+## App walkthrough:
+[![Watch the video](https://github.com/prisoka/Sudoku/blob/master/sudoku.mov)
+
 ## Skills Learned: 
 HTML, CSS, JavaScript, Bulma CSS Framework, and Surge to deploy.
 
