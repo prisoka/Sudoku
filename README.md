@@ -3,6 +3,9 @@
 ## Deployed URL: 
 www.prisoka-sudoku.surge.sh
 
+**Demo**
+![](sudoku.gif)
+
 ## What are you looking at? 
 This is my Q1 Front end Project, at Galvanize Web Development Immersive Course.
 
@@ -15,10 +18,6 @@ Sudoku is a Japanese logic-based number puzzle that doesn't require magical math
 The goal is to place the numbers from 1 to 9 into the empty cells, so that each row, column and 3x3 section contain all of the digits between 1 and 9, and each number appears only once.
 
 To get started, the grid will have some of the squares filled in. All you have to do is to fill the grid with the missing digits, in order to complete the board.
-
-**Demo**
-
-![](sudoku.gif)
 
 The goal is to place the numbers from 1 to 9 into the empty cells, so that each row, column and 3x3 section contain all of the digits between 1 and 9, and each number appears only once.
 
