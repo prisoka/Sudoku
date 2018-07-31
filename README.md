@@ -16,6 +16,13 @@ The goal is to place the numbers from 1 to 9 into the empty cells, so that each 
 
 To get started, the grid will have some of the squares filled in. All you have to do is to fill the grid with the missing digits, in order to complete the board.
 
+**Demo**
+![](sudoku.gif)
+
+The goal is to place the numbers from 1 to 9 into the empty cells, so that each row, column and 3x3 section contain all of the digits between 1 and 9, and each number appears only once.
+
+To get started, the grid will have some of the squares filled in. All you have to do is to fill the grid with the missing digits, in order to complete the board.
+
 ## Skills Learned: 
 HTML, CSS, JavaScript, Bulma CSS Framework, and Surge to deploy.
 
