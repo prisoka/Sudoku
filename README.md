@@ -3,7 +3,8 @@
 ## Deployed URL: 
 www.prisoka-sudoku.surge.sh
 
-**Demo**
+## Demo
+
 ![](sudoku.gif)
 
 ## What are you looking at? 
